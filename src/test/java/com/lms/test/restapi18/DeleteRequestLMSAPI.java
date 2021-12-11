@@ -22,7 +22,7 @@ public class DeleteRequestLMSAPI {
 		
 		//RestAssured.baseURI = "http://lms-admin-rest-service.herokupp.com";
 		RequestSpecification httpRequest = RestAssured.given().auth().basic("admin","password");
-		Response response = httpRequest.request(Method.DELETE,"https://lms-program-rest-service.herokuapp.com/programs/"+3496);
+		Response response = httpRequest.request(Method.DELETE,"https://lms-program-rest-service.herokuapp.com/programs/"+3055);
        String responseBody = response.getBody().prettyPrint();
 	System.out.println("Response Body is for hardcoded program id  =>  " + responseBody);
 		Reporter.log("Response body for hardcoded program id  =>  "+responseBody);
